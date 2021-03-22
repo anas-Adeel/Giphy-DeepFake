@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:ital@1&family=Sansita+Swashed:wght@300&display=swap");
+
+button {
+	--size: 35px;
+	display: table-cell;
+	vertical-align: middle;
+	width: var(--size);
+	height: var(--size);
+	border-radius: 50%;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+
+body {
+	background-color: rgb(0, 220, 220);
+	overflow-x: hidden;
+}
+
+#userInput {
+	height: 2.25rem;
+	width:  15rem;
+	font-family: sansita swashed, sans-serif;
+	font-size: 26px;
+}
+
+#name {
+	cursor: pointer;
+}
+
+#header {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+}
+
+#grid {
+	display: grid;
+	padding: 1rem;
+	/*justify-content: center;*/
+	place-items: center;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+}
+
+#submitBtn {
+	width: 6rem;
+	height: 2.25rem;
+	padding-left: 10px;
+	font-size: 26px;
+	font-family: sansita swashed;
+}
+
+#GIFCountSlider {
+	-webkit-appearance: none;
+	appearance: none;
+	transition: all 200ms ease-out;
+	border: 2px solid black;
+	border-radius: 50px;
+	width: 20rem;
+	height: 12px;
+	background-color: darkorange;
+}
+
+#GIFCountSlider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	border: 2px solid black;
+	background-color: yellow;
+	border-radius: 50%;
+	cursor: pointer;
+	width:  1.75rem;
+	height: 1.75rem;
+}
+
+#submitBtn {
+	height: 42px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.GIF {
+	border: 4px solid black;
+	border-radius: 25%;
+	width: 325px;
+}
+
+.title {
+	width: 100%;
+	display: grid;
+	justify-content: center;
+	padding: 10px;
+}
+
+.totalGIFs {
+	font-size: 24px;
+	font-family: sansita swashed;
+}

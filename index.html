@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giphy Api</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+</head>
+<body>
+	<div id="app">
+		<header>
+			<div class="title">
+				<div>
+					<div class="title">
+						<h1 id="name" style="font-family: sansita swashed;">Gif Master</h1>
+					</div>
+					<div id="submitInputs">
+						<input type="text" autofocus="" id="userInput" placeholder="Type A Search Term">
+						<input id="submitBtn" type="Submit" onclick="handleClick()">
+					</div>
+				</div>
+			</div>
+			<div id="header">
+				<button id="decrease" title="Decrease number of GIFs" onclick="changeLimit(-3)">-</button>
+				<input type="range"  id="GIFCountSlider" min="3" max="48" step="3" value="24">
+				<button id="increase" title="Increase number of GIFs" onclick="changeLimit(3)">+</button>
+				<span class="totalGIFs">The value of the slider is 
+					<span class="totalGIFs" id="GIFCount">24</span>
+				</span>
+			</div>
+		</header>
+
+		<div id="grid">
+			<!-- ALL THE GIF ELEMENTS -->
+			<img class="GIF" src="./gifs/visual-studio.gif">
+			<img class="GIF" src="./gifs/rainbow.gif">
+			<img class="GIF" src="./gifs/mario.gif">
+			<img class="GIF" src="./gifs/dancing-child.gif">
+			<img class="GIF" src="./gifs/coding-screen.gif">
+			<img class="GIF" src="./gifs/avengers.gif">
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./js/gif.js"></script>
+</html>
